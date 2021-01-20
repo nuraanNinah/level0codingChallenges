@@ -38,7 +38,19 @@ evenOrOdd(26)
 evenOrOdd(25)
 
 #Task 0.5
-def triangle():
+#def triangle():
+a = 3
+b = 5
+c = 3
 
+s = (a + b + c) / 2
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
 
+#Task 0.6
+x = max(1,2,3)
+
+print(x)
+
+#Task 0.7
 
