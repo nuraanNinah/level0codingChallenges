@@ -23,11 +23,11 @@ print(z)
 print(a)
 print(b)
 
-#Task 0.3
+#Task 0.3 function named hello
 name = 'Hello Tshepo'
 print(name)
 
-#Task 0.4
+#Task 0.4  function named even_or_odd
 def evenOrOdd(num):
     if(num % 2 == 0):
         print(num, " is Even")
@@ -37,15 +37,13 @@ def evenOrOdd(num):
 evenOrOdd(26)
 evenOrOdd(25)
 
-#Task 0.5
-#def triangle():
+#Task 0.5 function of a triangle
 a = 3
-b = 5
-c = 3
-
+b = 4
+c = 6
 s = (a + b + c) / 2
 area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
-print('The area of the triangle is %0.2f' %area)
+print(area)
 
 #Task 0.6
 x = max(1,2,3)
@@ -53,4 +51,7 @@ x = max(1,2,3)
 print(x)
 
 #Task 0.7
+celsius = 35.7
 
+fahrenheit = (celsius * 1.8) + 32
+print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))re
