@@ -55,3 +55,26 @@ celsius = 35.7
 
 fahrenheit = (celsius * 1.8) + 32
 print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))re
+
+#Task 0.8 coverting minutes to hours
+import datetime
+def convert(n):
+   return str(datetime.timedelta(minutes = n))
+n = 71
+print(convert(n))
+
+#Task 0.9 print out vowels
+v = "fat cat sat on the mat"
+for i in v:
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+    print(i)
+
+#Task 0.10 common letters
+string1=("house")
+string2=("computers")
+a=list(set(sstring1)&set(sstring2))
+print("Common letters:")
+for i in a:
+    print(i)
+
+        
