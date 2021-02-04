@@ -47,11 +47,16 @@ x = max(1,2,3)
 
 print(x)
 
-#Task 0.7    Task 0.7 - write two functions, to convert Fahrenheit to Celsius and another on to convert Celsius to Fahrenheit.
-celsius = 35.7
+#Task 0.7    
 
-fahrenheit = (celsius * 1.8) + 32
-print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))re
+def fahrenheit_to_celsius(temp):
+    return ((temp - 32) * (5/9))
+print(fahrenheit_to_celsius(0))
+
+def celsius_to_fahrenheit(temp):
+    return ((temp * 9/5) + 32)
+print(celsius_to_fahrenheit(0))
+
 
 #Task 0.8 coverting minutes to hours
 import datetime
