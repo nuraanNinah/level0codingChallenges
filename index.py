@@ -65,11 +65,11 @@ def convert(n):
 n = 71
 print(convert(n))
 
-#Task 0.9 print out vowels   Task 0.9 - missing a function 
-v = "fat cat sat on the mat"
-for i in v:
-    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
-    print(i)
+#Task 0.9 print out vowels  
+def vowels(text):
+    vowels = "aeiouAEIOU"
+    print([letter for letter in text if letter in vowels])
+vowels('The fat cat sat on the mat')
 
 #Task 0.10 common letters   Task 0.10 - missing a function.
 string1=("house")
