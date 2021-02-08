@@ -41,11 +41,23 @@ def Triangle(s1, s2, s3):
 	area = (2 * 3 * 2)/2
 	return area
 
-#Task 0.6   Task 0.6 - it is completely wrong. You are required to CREATE A FUNCTION that takes in 3 numbers (which you will have to modify to accommodate any set of numbers) and returns the biggest number out of them.
-def maximum()
-x = max(1,2,3)
+#Task 0.6   
 
-print(x)
+def maximum(a, b, c): 
+    if (a >= b) and (a >= c): 
+        largest = a 
+  
+    elif (b >= a) and (b >= c): 
+        largest = b 
+    else: 
+        largest = c 
+          
+    return largest 
+
+a = 1
+b = 2
+c = 3
+print(maximum(a, b, c)) 
 
 #Task 0.7    
 
@@ -71,12 +83,16 @@ def vowels(text):
     print([letter for letter in text if letter in vowels])
 vowels('The fat cat sat on the mat')
 
-#Task 0.10 common letters   Task 0.10 - missing a function.
-string1=("house")
-string2=("computers")
-a=list(set(sstring1)&set(sstring2))
-print("Common letters:")
-for i in a:
-    print(i)
+#Task 0.10 common letters
+def common_letters(string_one, string_two):
+  common = ["common letters:"]
+  for letter in string_one:
+    if (letter in string_two) and not (letter in common):
+      common.append(letter)
+  print(common)
+  return common
 
-        
+
+common_letters("house", "computers")
+
+
