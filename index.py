@@ -23,10 +23,10 @@ print(z)
 print(a)
 print(b)
 
-#Task 0.3 function named hello Task 0.3 - Your function is suppose to have an argument/parameter. You hard coded the output which is incorrect.
-def hello():
-    print("Hello Tshepo!")
-hello()
+#Task 0.3 function named hello 
+def hello(name):
+    print("Hello " + name)
+hello("Tshepo!")
 
 #Task 0.4  function named even_or_odd 
 def even_or_odd(num):
@@ -36,10 +36,11 @@ def even_or_odd(num):
         print("odd")
 
 
-#Task 0.5 function of a triangle  Task 0.5 - that is not the correct why to calculate the area of a triangle, you only did the first part. Go through the area link once again.
-def Triangle(s1, s2, s3):
-	area = (2 * 3 * 2)/2
-	return area
+#Task 0.5 function of a triangle 
+def triangle(s1, s2, s3): 
+	s = (s1+s2+s3)/2
+	return (s*(s - s1)*(s - s2)*(s - s3)) ** 0.5
+print(triangle(20, 10 ,20))
 
 #Task 0.6   Task 0.6 - good job. Now modify this fucntion to take any number of arguments.
 
@@ -59,16 +60,15 @@ b = 2
 c = 3
 print(maximum(a, b, c)) 
 
-#Task 0.7     Task 0.7 - read the instructions again. This task was done incorrectly.
-
-def fahrenheit_to_celsius(temp):
-    return ((temp - 32) * (5/9))
-print(fahrenheit_to_celsius(0))
+#Task 0.7 
 
 def celsius_to_fahrenheit(temp):
     return ((temp * 9/5) + 32)
-print(celsius_to_fahrenheit(0))
+print(celsius_to_fahrenheit(14))
 
+def fahrenheit_to_celsius(temp):
+    return ((temp - 32) * (5/9))
+print(fahrenheit_to_celsius(-17))
 
 #Task 0.8 coverting minutes to hours
 import datetime
