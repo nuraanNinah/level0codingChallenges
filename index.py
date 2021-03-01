@@ -23,25 +23,25 @@ print(z)
 print(a)
 print(b)
 
-#Task 0.3 function named hello
+#Task 0.3 function named hello Task 0.3 - Your function is suppose to have an argument/parameter. You hard coded the output which is incorrect.
 def hello():
     print("Hello Tshepo!")
 hello()
 
-#Task 0.4  function named even_or_odd
-def evenOrOdd(num):
+#Task 0.4  function named even_or_odd 
+def even_or_odd(num):
     if(num % 2 == 0):
-        print(num, " is Even")
+        print("even")
     else:
-        print(num, "is Odd")
+        print("odd")
 
 
-#Task 0.5 function of a triangle 
+#Task 0.5 function of a triangle  Task 0.5 - that is not the correct why to calculate the area of a triangle, you only did the first part. Go through the area link once again.
 def Triangle(s1, s2, s3):
 	area = (2 * 3 * 2)/2
 	return area
 
-#Task 0.6   
+#Task 0.6   Task 0.6 - good job. Now modify this fucntion to take any number of arguments.
 
 def maximum(a, b, c): 
     if (a >= b) and (a >= c): 
@@ -59,7 +59,7 @@ b = 2
 c = 3
 print(maximum(a, b, c)) 
 
-#Task 0.7    
+#Task 0.7     Task 0.7 - read the instructions again. This task was done incorrectly.
 
 def fahrenheit_to_celsius(temp):
     return ((temp - 32) * (5/9))
@@ -83,7 +83,7 @@ def vowels(text):
     print([letter for letter in text if letter in vowels])
 vowels('The fat cat sat on the mat')
 
-#Task 0.10 common letters
+#Task 0.10 common letters  Task 0.10 - do not return a list (square brackets)
 def common_letters(string_one, string_two):
   common = ["common letters:"]
   for letter in string_one:
