@@ -83,16 +83,16 @@ def vowels(text):
     print([letter for letter in text if letter in vowels])
 vowels('The fat cat sat on the mat')
 
-#Task 0.10 common letters  Task 0.10 - do not return a list (square brackets)
-def common_letters(string_one, string_two):
-  common = ["common letters:"]
-  for letter in string_one:
-    if (letter in string_two) and not (letter in common):
-      common.append(letter)
-  print(common)
-  return common
+#Task 0.10 common letters  
+def common_letters(str1,str2):
+    common = []
+    for let1 in list(str1):
+        for let2 in list(str2):
+            if(let2==let1 and (let1 not in common)):
+                common.append(let1)
+    return ",".join(common)
 
-
-common_letters("house", "computers")
+if __name__ == '__main__':
+	print(common_letters('house','computers'))
 
 
