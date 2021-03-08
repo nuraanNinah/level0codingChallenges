@@ -63,7 +63,7 @@ print(maximum(a, b, c))
 #Task 0.7 
 
 def celsius_to_fahrenheit(temp):
-    return ((temp * 9/5) + 32)
+    return ((temp * 9/5) - 32)
 print(celsius_to_fahrenheit(14))
 
 def fahrenheit_to_celsius(temp):
